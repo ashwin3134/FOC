@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Echo number of students: "
+read n
+for ((a=1;a<n;a++))
+do
+echo "Enter student name: "
+read student
+echo "English marks"
+read English
+echo "Science marks"
+read Science
+sum=$(($English+$maths+$Science))
+per=$((100*sum/300))
+echo "Total=" $sum
+echo "Percentage=" $per
+done
