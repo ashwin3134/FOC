@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+union
+{
+	char name[25];
+	int IDno;
+	float salary;
+}desc;
+int main()
+
+{
+	strcpy(desc.name,"vinod");
+	printf("Employee details\n");
+	printf("The name is %s\n",desc.name);
+	printf("The IDno is %d\n",desc.IDno);
+	printf("The salary is %6.2\n",desc.salary);
+	desc.IDno= 10;
+	printf("Employee details\n");
+	printf("The name is %s\n",desc.name);
+	printf("The IDno is %d\n",desc.IDno);
+	printf("The salary is %6.2\n",desc.salary);
+	desc.salary=6500.00;
+	printf("Employee details\n");
+	printf("The name is %s\n",desc.name);
+	printf("The IDno is %d\n",desc.IDno);
+	printf("The salary is %6.2\n",desc.salary);
+    return 0;
+}
